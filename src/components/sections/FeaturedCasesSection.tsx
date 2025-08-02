@@ -225,7 +225,7 @@ const FeaturedCasesSection = () => {
               <div className="bg-[#06342e] rounded-xl p-6 text-white">
                 <Quote className="w-8 h-8 text-[#aa7f61] mb-4" />
                 <blockquote className="text-lg leading-relaxed mb-4">
-                  "{currentCase.testimonial}"
+                  &ldquo;{currentCase.testimonial}&rdquo;
                 </blockquote>
                 <div className="flex items-center justify-between">
                   <div>

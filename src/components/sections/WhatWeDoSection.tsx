@@ -47,10 +47,6 @@ const WhatWeDoSection = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
     },
   };
 
@@ -100,6 +96,7 @@ const WhatWeDoSection = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
                 className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer transform hover:-translate-y-2 ${
                   service.popular ? 'ring-2 ring-[#aa7f61] ring-offset-4' : ''
                 }`}

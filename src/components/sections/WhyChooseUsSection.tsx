@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Award, Users, Target, Zap, BookOpen, Heart, CheckCircle, Star, LinkedinIcon } from 'lucide-react';
+import { Award, Users, Target, Zap, BookOpen, CheckCircle, Star } from 'lucide-react';
 
 const WhyChooseUsSection = () => {
   const advantages = [

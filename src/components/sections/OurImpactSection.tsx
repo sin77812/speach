@@ -2,11 +2,20 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import { TrendingUp, Users, Building2, Award, Target, BarChart3 } from 'lucide-react';
+import { TrendingUp, Users, Building2, Award, BarChart3, LucideIcon } from 'lucide-react';
+
+interface StatData {
+  icon: LucideIcon;
+  number: number;
+  suffix: string;
+  label: string;
+  description: string;
+  color: string;
+}
 
 const OurImpactSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.3 });
+  const isInView = useInView(ref, { once: true });
   
   const stats = [
     {
@@ -142,8 +151,8 @@ const OurImpactSection = () => {
         >
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 max-w-4xl mx-auto border border-white/10">
             <blockquote className="text-2xl lg:text-3xl font-medium text-white/90 leading-relaxed mb-6">
-              "그레이스스피치 교육을 통해 우리 팀의 프레젠테이션 품질이 혁신적으로 개선되었습니다. 
-              단순히 말하는 기술이 아닌, 사람의 마음을 움직이는 진정한 소통의 힘을 배웠습니다."
+              &ldquo;그레이스스피치 교육을 통해 우리 팀의 프레젠테이션 품질이 혁신적으로 개선되었습니다. 
+              단순히 말하는 기술이 아닌, 사람의 마음을 움직이는 진정한 소통의 힘을 배웠습니다.&rdquo;
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-12 h-12 bg-gradient-to-br from-[#aa7f61] to-[#8a6b4d] rounded-full flex items-center justify-center">
@@ -162,7 +171,7 @@ const OurImpactSection = () => {
 };
 
 // Animated Counter Component
-const StatCard = ({ stat, index, isInView }: { stat: any; index: number; isInView: boolean }) => {
+const StatCard = ({ stat, index, isInView }: { stat: StatData; index: number; isInView: boolean }) => {
   const [count, setCount] = useState(0);
   const Icon = stat.icon;
 
