@@ -171,12 +171,13 @@ const CTASection = () => {
           </motion.div>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            조직의 <span className="text-yellow-300">소통 혁신</span>을 시작하세요
+            🚀 우리 팀 변화 시작하기
           </h2>
           
           <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            전문 컨설턴트가 귀하의 목표와 상황에 맞는 최적의 교육 솔루션을 제안해드립니다. <br />
-            지금 바로 무료 상담을 신청하고 변화의 첫 걸음을 내디뎌보세요.
+            <span className="font-bold text-yellow-300">15년 경력 전문가</span>가 귀하의 목표와 상황에 맞는 <br />
+            <span className="font-bold">최적의 솔루션을 무료로 진단</span>해드립니다 <br />
+            <span className="text-lg">📞 3분 상담으로 8주 후 당신의 팀이 달라집니다</span>
           </p>
         </motion.div>
 

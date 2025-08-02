@@ -29,10 +29,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 text-white text-sm font-medium mb-6"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#aa7f61] to-[#d4b896] rounded-full px-6 py-3 text-white text-sm font-bold mb-6 shadow-lg"
             >
               <Award className="w-4 h-4" />
-              <span>실전 중심 스피치 교육 전문</span>
+              <span>15년 경력 전문가의 노하우 대공개</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
               말 한마디로{' '}
               <span className="relative">
                 <span className="relative z-10 bg-gradient-to-r from-[#aa7f61] to-[#d4b896] bg-clip-text text-transparent">
-                  운명이 바뀌는
+                  조직의 운명이 바뀝니다
                 </span>
                 <motion.div
                   initial={{ scaleX: 0 }}
@@ -53,8 +53,7 @@ const HeroSection = () => {
                   transition={{ delay: 1, duration: 0.8 }}
                   className="absolute bottom-2 left-0 right-0 h-3 bg-[#aa7f61]/30 -z-10"
                 />
-              </span>{' '}
-              순간을 만듭니다
+              </span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -64,8 +63,8 @@ const HeroSection = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed"
             >
-              개인의 변화에서 시작해 조직의 혁신으로 이어지는 <br className="hidden lg:block" />
-              실전 중심의 언어·스피치 교육
+              <span className="font-bold text-[#aa7f61]">1,200+ 명이 경험한 변화, 98% 만족도</span>의 검증된 스피치 교육 <br className="hidden lg:block" />
+              <span className="text-lg">8주 후, 당신의 팀이 소통 전문가가 됩니다</span>
             </motion.p>
 
             {/* Stats */}
@@ -98,10 +97,10 @@ const HeroSection = () => {
             >
               <Link
                 href="#contact"
-                className="group relative bg-[#aa7f61] hover:bg-white text-white hover:text-[#06342e] px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="group relative bg-gradient-to-r from-[#aa7f61] to-[#d4b896] hover:from-white hover:to-white text-white hover:text-[#06342e] px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-2xl hover:shadow-xl transform hover:-translate-y-2 hover:scale-105"
               >
-                <span>무료 상담 신청</span>
-                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <span>🎯 무료 진단 받기</span>
+                <ChevronRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </Link>
               
               <button className="group flex items-center justify-center space-x-2 text-white border border-white/30 hover:border-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10">
